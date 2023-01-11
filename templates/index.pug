@@ -1,0 +1,18 @@
+nav 
+  ul 
+    each item in locals.pages
+      li 
+        a(href='#' + item.slug) #{item.title}
+
+main
+  each item, index in locals.pages
+    - var selected = item.slug === "home" ? "selected" : ""
+    section(class=item.slug + ' ' + selected) 
+      h2 #{item.title}
+      .content !{item.content}
+
+aside
+  ul
+    each item in locals.bookmarks 
+      li
+        a(href=item.link target=item.target) #{item.label}
