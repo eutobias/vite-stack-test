@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   links.forEach((link) => {
-    console.log(link)
     link.removeEventListener('click', clickFn)
     link.addEventListener('click', clickFn)
   })
