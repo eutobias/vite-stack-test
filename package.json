@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start":" vite preview"
+    "start":" vite preview --host"
   },
   "devDependencies": {
     "vite": "^4.0.0"
